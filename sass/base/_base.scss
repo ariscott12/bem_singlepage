@@ -1,0 +1,25 @@
+body {
+    font-size: 100%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   	font-weight: 300;
+    background:#fff;
+}
+li {
+    list-style-type: none;
+}
+p {
+	font-size:.95rem;
+}
+
+a {
+    color:$primary-color-1;
+    text-decoration:none;
+}   
+h1,h2,h3,h4,h5,h6 {
+	font-weight:normal;
+}
+strong {
+	font-style:normal;
+	font-weight:$font-weight-bold;
+}
+

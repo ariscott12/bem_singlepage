@@ -1,0 +1,18 @@
+.page-foot {
+	text-align:center;
+	padding:2.5em 0;
+	background:$secondary-color-1;
+}
+
+
+@include break-at-min(1000) {
+	.page-foot {
+		text-align:left;
+	}
+	.page-foot__social {
+		float:left;
+	}
+	.page-foot__btn {
+		float:right;
+	}
+}

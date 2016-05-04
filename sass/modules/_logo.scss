@@ -1,0 +1,25 @@
+.logo {
+	background: $black-medium;
+}
+
+.logo--mobile {
+	width:8em;
+	height:2.25em;
+	margin-top:.5em;
+	margin-bottom:.5em;
+}
+.logo--desktop {
+	width:11em;
+	height:3em;
+	margin:1em 2em .5em 1em;
+	display:none;
+}
+
+@include break-at-min(1000) {
+	.logo--desktop {
+		display:block;
+	}
+	.logo--mobile {
+		display:none;
+	}
+}

@@ -1,0 +1,9 @@
+.menu-trigger {
+	position:absolute;
+	right: 1.5em;
+    top: .4em;
+	color:$primary-color-1;
+	@include break-at-min(1000) {
+		display:none;
+	}
+}

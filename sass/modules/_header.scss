@@ -1,0 +1,32 @@
+.header-top {
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+	position:relative;
+	z-index: 1000;
+}
+.header-top__number {
+	position:absolute;
+	right:1em;
+	top:1.75em;
+	display:none;
+	@include break-at-min(1000) {
+		display:block;
+	}
+}
+.header-top__number-link {
+	color:$secondary-color-2;
+	margin-left:.5em;
+}
+.header-bottom {
+	@include center();
+	text-align:center;
+	padding:.6em 0 .85em 0;
+}
+.header-bottom__number {
+	display:inline-block;
+	position:relative;
+	top:3px;
+	left:7px;
+}
+.header-bottom__btn {
+	margin-right:.25em;
+}

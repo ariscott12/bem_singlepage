@@ -1,0 +1,18 @@
+.hero {
+	text-align:center;
+	background:$black;
+	color:#fff;
+	position:relative;
+	.l-contain {
+		padding-top:6em;
+		padding-bottom:6em;
+	}
+}
+.hero__headline {
+	font-size:1.8rem;
+	margin-bottom:.5em;
+}
+.hero__caption {
+	position:absolute;
+	bottom:1.15em;
+}
