@@ -1,3 +1,4 @@
+// Page Copy Styles
 .t-bold {
 	font-weight:$font-weight-bold;
 }
@@ -15,3 +16,26 @@
 .t-italic {
 	font-style: italic;
 }
+
+p {
+	font-size:.95rem;
+}
+
+@include break-at-min(800) {
+	p {
+		font-size:1rem;
+	}
+	.t-medium-large {
+		font-size: 1.65rem;
+	}
+}
+
+@include break-at-min(1275) {
+	p {
+		font-size:1.15rem;
+	}
+	.t-medium-large {
+		font-size: 1.75rem;
+	}
+}
+

@@ -1,0 +1,56 @@
+// Page Head Styles
+.page-head__wrapper {
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1000;
+}
+
+.page-head__number {
+  position: absolute;
+  right: 1em;
+  top: 1.75em;
+  margin-left: .25em;
+  display: none;
+}
+
+.page-head__number-link {
+  color: $secondary-color-2;
+  margin-left: .3em;
+}
+
+.page-head__search {
+  width: 1.25em;
+  position: absolute;
+  left: 1.25em;
+  top: .4em;
+  cursor: pointer;
+}
+
+.page-head__sub {
+  @include center();
+  text-align: center;
+  padding: .6em 0 .85em 0;
+}
+
+.page-head__btn {
+  margin-right: .25em;
+}
+
+// Media Queries
+@include break-at-min($medium-large) {
+  .page-head__sub {
+    padding: 0;
+  }
+  .page-head__search {
+    top: 1.75em;
+  }
+  .page-head__number {
+  	display: block;
+  }	
+  .page-head__btn {
+    position: absolute;
+    right: 0;
+    top: -2.85em;
+    z-index: 1000;
+  }
+}

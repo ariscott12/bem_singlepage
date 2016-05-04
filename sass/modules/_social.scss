@@ -1,4 +1,13 @@
-.social__icon {
+// Social Nav Styles
+.social-nav__link {
+	display:inline-block;
+}
+.social-nav__icon {
 	width:2.25em;
 	margin:0 .25em 1.25em 0;
+
+	@include break-at-min($medium-large) {
+		width:2.5em;
+		margin-bottom:0;
+	}
 }

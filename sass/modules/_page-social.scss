@@ -1,0 +1,18 @@
+.page-social {
+	text-align:center;
+	padding:2.5em 0;
+	background:$secondary-color-1;
+}
+
+
+@include break-at-min($medium-large) {
+	.page-social {
+		text-align:left;
+	}
+	.page-social__nav {
+		float:left;
+	}
+	.page-social__btn {
+		float:right;
+	}
+}

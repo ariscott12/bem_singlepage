@@ -1,0 +1,51 @@
+// Contact Styling
+.contact {
+  display: inline-block;
+}
+
+.contact__number {
+  font-size: .9rem;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  left: 7px;
+}
+
+.contact__link {
+  color: $primary-color-1;
+}
+
+// Contact Media Queries
+@include break-at-min($medium-large) {
+  .contact {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 20em;
+    z-index: 1000;
+    background: $white;
+    padding: 1em 1em .5em 1em;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  }
+  .contact__btn {
+    font-size: 1.45rem;
+    padding: .5em 1.25em;
+    margin-bottom: .5em;
+  }
+  .contact__number {
+    display: block;
+    font-size: 1.25em;
+    text-transform: capitalize;
+    top: 0;
+    left: 0;
+  }
+  .contact__extra {
+    display: none;
+  }
+}
+
+@include break-at-min($large) {
+  .contact {
+    top: 25em;
+  }
+}

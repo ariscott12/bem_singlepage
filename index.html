@@ -2,24 +2,23 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Trendy Minds</title>
+		<title>Front-End Development Test</title>
 		<meta name="description" content="Front-End Development Test">
-		<meta name="author" content="SitePoint">
+		<meta name="author" content="Trendy Minds">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
-		<header role = "header">
-			<section class = "header-top l-clearfix">
+		<header class = "page-head" role = "header">
+			<div class = "page-head__wrapper l-clearfix">
 				<div class = "l-contain">
-					<img class = "search-icon" src = "img/icons/icon-search.png" alt = "Site Search Icon">
+					<img class = "page-head__search js-search-trigger" src = "img/icons/icon-search.png" alt = "Site Search Icon">
 					<div class = "logo logo--mobile l-center-content"></div>
-					<div class = "menu-trigger js-menu-trigger">
-						<span class = "menu-trigger__open">Menu</span>
-					</div>
-					<div class = "header-top__number"><img width="15px" src = "img/icons/icon-phone.png"><a class = "header-top__number-link" href="tel://555-555-5555">555.555.5555</a></div>
+					<div class = "menu-trigger js-menu-trigger">Menu</div>
+					<div class = "page-head__number"><img width="15px" src = "img/icons/icon-phone.png" alt = "Phone Icon"><a class = "page-head__number-link" href="tel://555-555-5555">555.555.5555</a></div>
 				</div>
 
+				<!-- UTILITY MENU -->
 				<nav class = "menu menu--util js-menu">
 					<ul class = "menu__list--util">
 						<li class = "menu__item menu__item--util"><a class = "menu__link" href = "#">Utility Link</a></li>
@@ -44,65 +43,68 @@
 					</ul>
 				</nav>
 
+				<!-- MAIN MENU -->
 				<nav class = "menu menu--main js-menu">
-					<div class = "l-contain">
+					<div class = "l-contain menu__l-contain">
 						<ul class = "menu__list--main">
-							<li class = "menu__item menu__item--main"><a class = "menu__link js-link" href = "#" >Parent <span class = "menu__icon">&#9662;</span></a>
+							<li class = "menu__item menu__item--main"><a class = "menu__link js-link" href = "#">Parent <span class = "menu__icon">&#9662;</span></a>
 								<ul class = "menu__sub menu__sub--main js-menu-sub">
-									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#" >Child Link</a></li>
-									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#" >Child Link</a></li>
-									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#" >Child Link</a></li>
+									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#">Child Link</a></li>
+									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#">Child Link</a></li>
+									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#">Child Link</a></li>
 								</ul>
 							</li>
-							<li class = "menu__item menu__item--main"><a class = "menu__link js-link" href = "#" >Parent <span class = "menu__icon">&#9662;</span></a>
+							<li class = "menu__item menu__item--main"><a class = "menu__link js-link" href = "#">Parent <span class = "menu__icon">&#9662;</span></a>
 								<ul class = "menu__sub menu__sub--main js-menu-sub">
-									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#" >Child Link</a></li>
-									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#" >Child Link</a></li>
-									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#" >Child Link</a></li>
+									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#">Child Link</a></li>
+									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#">Child Link</a></li>
+									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#">Child Link</a></li>
 								</ul>
 							</li>
-							<li class = "menu__item menu__item--main"><a class = "menu__link js-link" href = "#" >Parent <span class = "menu__icon">&#9662;</span></a>
+							<li class = "menu__item menu__item--main"><a class = "menu__link js-link" href = "#">Parent <span class = "menu__icon">&#9662;</span></a>
 								<ul class = "menu__sub menu__sub--main js-menu-sub">
-									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#" >Child Link</a></li>
-									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#" >Child Link</a></li>
-									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#" >Child Link</a></li>
+									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#">Child Link</a></li>
+									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#">Child Link</a></li>
+									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#">Child Link</a></li>
 								</ul>
 							</li>
-							<li class = "menu__item menu__item--main"><a class = "menu__link js-link" href = "#" >Parent <span class = "menu__icon">&#9662;</span></a>
+							<li class = "menu__item menu__item--main"><a class = "menu__link js-link" href = "#">Parent <span class = "menu__icon">&#9662;</span></a>
 								<ul class = "menu__sub menu__sub--main js-menu-sub">
-									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#" >Child Link</a></li>
-									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#" >Child Link</a></li>
-									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#" >Child Link</a></li>
+									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#">Child Link</a></li>
+									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#">Child Link</a></li>
+									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#">Child Link</a></li>
 								</ul>
 							</li>
-							<li class = "menu__item menu__item--main"><a class = "menu__link js-link" href = "#" >Parent <span class = "menu__icon">&#9662;</span></a>
+							<li class = "menu__item menu__item--main"><a class = "menu__link js-link" href = "#">Parent <span class = "menu__icon">&#9662;</span></a>
 								<ul class = "menu__sub menu__sub--main js-menu-sub">
-									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#" >Child Link</a></li>
-									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#" >Child Link</a></li>
-									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#" >Child Link</a></li>
+									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#">Child Link</a></li>
+									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#">Child Link</a></li>
+									<li class = "menu__item--sub"><a class = "menu__link--sub" href = "#">Child Link</a></li>
 								</ul>
 							</li>
-							<li class = "menu__item menu__item--main"><a class = "menu__link" href = "#" >Parent</a></li>
-							<li class = "menu__item menu__item--main"><a class = "menu__link" href = "#" >Parent</a></li>
+							<li class = "menu__item menu__item--main"><a class = "menu__link" href = "#">Parent</a></li>
+							<li class = "menu__item menu__item--main"><a class = "menu__link" href = "#">Parent</a></li>
 						</ul>
 					</div>
 				</nav>
-			</section>
-			<section class = "header-bottom">
-				<div class = "header-bottom__btn btn btn--small btn--orange">
+			</div>
+			<div class = "page-head__sub l-contain">
+				<div class = "page-head__btn btn btn--small btn--orange">
 					<span class = "btn__text">Lorem Ipsum</span>
 				</div>
-				<div class = "btn btn--small btn--blue">
-					<span class = "btn__text">Lorem Ipsum</span>
+				<div class = "contact">
+					<div class = "contact__btn btn btn--small btn--blue">
+						<span class = "btn__text">Lorem Ipsum</span>
+					</div>
+					<p class = "contact__number"><span class = "contact__extra">or</span> call <a class = "contact__link" href="tel://555-555-5555">555.555.5555</a></p>
 				</div>
-				<p class = "t-small header-bottom__number">or call <a href="tel://555-555-5555">555.555.5555</a></p>
-			</section>
+			</div>
 		</header>
-		<div class = "search">
-					<p class = "search__text">Search the site</p>
-					<img class = "search__icon" src = "img/icons/icon-search.png" />
-					<input class = "search__input" type="text" name="fsearch">
-				</div>
+		<div class = "search js-search">
+			<p class = "search__text">Search the site <img class = "search__close js-close" src = "img/icons/icon-close-x.png" alt = "Close the Search Window"></p>
+			<img class = "search__icon" src = "img/icons/icon-search-lg.png" />
+			<input class = "search__input" type="text" name="fsearch">
+		</div>
 		<div class = "hero" role = "banner">
 			<div class = "l-contain">
 				<h1 class = "hero__headline">Lorem ipsum <strong>dolor</strong></h1>
@@ -130,32 +132,31 @@
 				</div>
 			</section>
 		</main>
-		<section class = "page-foot">
+		<section class = "page-social">
 			<div class = "l-contain l-clearfix">
-				<div class = "social page-foot__social">
-					<a href = "#"><img class = "social__icon" src = "img/icons/icon-facebook.svg"  alt = "Facebook Icon"></a>
-					<a href = "#"><img class = "social__icon" src = "img/icons/icon-twitter.svg" alt = "Twitter Icon"></a>
-					<a href = "#"><img class = "social__icon" src = "img/icons/icon-youtube.svg" alt = "Youtube Icon"></a>
-					<a href = "#"><img class = "social__icon" src = "img/icons/icon-linkedin.svg" alt = "Linkedin Icon"></a>
-				</div>
-				<div class = "page-foot__btn btn btn--large btn--blue">
+				<nav class = "social-nav page-social__nav">
+					<a class = "social-nav__link" href = "#"><img class = "social-nav__icon" src = "img/icons/icon-facebook.png"  alt = "Facebook Icon"></a>
+					<a class = "social-nav__link" href = "#"><img class = "social-nav__icon" src = "img/icons/icon-twitter.png" alt = "Twitter Icon"></a>
+					<a class = "social-nav__link" href = "#"><img class = "social-nav__icon" src = "img/icons/icon-youtube.png" alt = "Youtube Icon"></a>
+					<a class = "social-nav__link" href = "#"><img class = "social-nav__icon" src = "img/icons/icon-linkedin.png" alt = "Linkedin Icon"></a>
+				</nav>
+				<div class = "page-social__btn btn btn--large btn--blue">
 					<span class = "btn__text">Lorem Ipsum</span>
 				</div>
 			</div>
 		</section>
-		<footer class = "page-micro" role="contentinfo">
+		<footer class = "page-foot" role="footer">
 			<div class = "l-contain">
 				<div class = "grid-column-6">
-					<p class = "page-micro__copy"><em class = "t-bold">Lorem Ipsum Dolar</em> 555 N. Main Street, Beverly Hills, CA 90210<br />1.555.555.5555</p>
-					
+					<p class = "page-foot__copy"><strong>Lorem Ipsum Dolar</strong> 555 N. Main Street, Beverly Hills, CA 90210<br />1.555.555.5555</p>	
 				</div>
 				<div class = "grid-column-6">
-					<p class = "page-micro__copy"> <a class = "page-micro__link" href = "#">Disclosure</a> | <a class = "page-micro__link" href = "#" >Privacy Statement</a></p>
-					<p class = "page-micro__copy t-italic">&copy; 2015 Lorem ipsum. All Rights Reserved</p>
+					<p class = "page-foot__copy"> <a class = "page-foot__link" href = "#">Disclosure</a> | <a class = "page-foot__link" href = "#">Privacy Statement</a></p>
+					<p class = "page-foot__copy t-italic">&copy; 2015 Lorem ipsum. All Rights Reserved</p>
 				</div>
 			</div>
 		</footer>
 		<script src="js/build/main.js"></script>
 		<script src="//localhost:35729/livereload.js"></script>
 	</body>
-</html>`
+</html>

@@ -1,18 +1,42 @@
+// Hero Styles
 .hero {
-	text-align:center;
-	background:$black;
-	color:#fff;
-	position:relative;
-	.l-contain {
-		padding-top:6em;
-		padding-bottom:6em;
-	}
+  text-align: center;
+  background: $black;
+  color: #fff;
+  position: relative;
+  .l-contain {
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
 }
+
 .hero__headline {
-	font-size:1.8rem;
-	margin-bottom:.5em;
+  font-size: 1.8rem;
+  margin-bottom: .5em;
 }
+
 .hero__caption {
-	position:absolute;
-	bottom:1.15em;
+  position: absolute;
+  bottom: 1.15em;
+}
+
+// Hero Media Queries
+@include break-at-min($medium) {
+  .hero__headline {
+    font-size: 2.5rem;
+  }
+  .hero .l-contain {
+    padding-top: 8em;
+    padding-bottom: 8em;
+  }
+}
+
+@include break-at-min($large) {
+  .hero__headline {
+    font-size: 3.5rem;
+  }
+  .hero .l-contain {
+    padding-top: 10em;
+    padding-bottom: 10em;
+  }
 }

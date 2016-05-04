@@ -1,3 +1,4 @@
+// Logo Styling
 .logo {
 	background: $black-medium;
 }
@@ -8,6 +9,8 @@
 	margin-top:.5em;
 	margin-bottom:.5em;
 }
+
+// Created seperate desktop logo so it could be centered in-between Utility Nav
 .logo--desktop {
 	width:11em;
 	height:3em;
@@ -15,7 +18,8 @@
 	display:none;
 }
 
-@include break-at-min(1000) {
+// Logo Media Queries
+@include break-at-min($medium-large) {
 	.logo--desktop {
 		display:block;
 	}

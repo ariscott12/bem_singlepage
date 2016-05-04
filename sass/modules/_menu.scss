@@ -1,20 +1,19 @@
 .menu {
-  display:none;
+  display: none;
 }
 
-.menu--main {
-	.l-contain {
-		padding:0;
-	}
+.menu__l-contain {
+  padding: 0;
 }
 
 .menu__sub {
   display: none;
 }
+
 .menu__icon {
-	font-size: .9em;
-    margin-left: .5em;
-    position: relative;
+  font-size: .9em;
+  margin-left: .5em;
+  position: relative;
 }
 
 .menu__sub--main {
@@ -25,7 +24,7 @@
   background: $secondary-color-2;
 }
 
-@include break-at-max(1000) {
+@include break-at-max($medium-large) {
   .menu__link--sub,
   .menu__link {
     color: #fff;
@@ -34,26 +33,28 @@
   }
   .menu__list--util {
     background: $secondary-color-1;
-
   }
   .menu__list--main {
     background: $primary-color-1;
   }
 }
 
-@include break-at-min(1000) {
-	.menu {
-  	display:block;
-	}
+@include break-at-min($medium-large) {
+  .menu {
+    display: block !important;
+  }
   .menu--main {
     border-top: 1px solid #ccc;
   }
   .menu__icon {
-  	color:$primary-color-1;
+    color: $primary-color-1;
   }
   .menu--util {
     @include center();
     text-align: center;
+    .menu__icon {
+      display: none;
+    }
   }
   .menu__item {
     position: relative;
@@ -65,20 +66,23 @@
     font-size: .9em;
     margin-right: 1.25em;
   }
-  .menu__item--main {
-    margin-right: 3%;
-  }
   .menu--main .menu__link {
-  	color:$secondary-color-1;
-    line-height: 3rem;
+    color: $secondary-color-1;
+    line-height: 3.25rem;
     display: block;
     padding: 0em 1em;
+    font-size: 1.1rem;
+  }
+  .menu__item--main {
+    margin-right: 3%;
     &:hover {
-    	background:$primary-color-1;
-    	color:$white;
-     	+ .menu__sub--main {
-        	display: block;
-      	}
+      background: $primary-color-1;
+      .menu__sub--main {
+        display: block;
+      }
+      .menu__link {
+        color: $white;
+      }
     }
   }
   .menu__link--sub {
